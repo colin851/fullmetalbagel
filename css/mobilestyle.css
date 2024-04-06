@@ -95,13 +95,14 @@ html,body {
 .follow-btn {
     width: 100%;
     height: .54rem;
-    border: .01rem solid #F41F1F;
-    border-radius: .04rem;
+    border: .02rem solid #F41F1F;
+    border-radius: .08rem;
     line-height: .54rem;
     text-align: center;
     margin-top: .4rem;
     font-size: .2rem;
     font-weight: 900;
+    background: rgba(244, 31, 31, 0.10);
 }
 .section-p3 {
     background-color: #1A272F;
@@ -169,7 +170,6 @@ html,body {
     border-radius: .08rem;
     line-height: .48rem;
     font-size: .16rem;
-    border-radius: .75rem;
     text-align: center;
     font-weight: 900;
 }
