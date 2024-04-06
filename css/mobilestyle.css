@@ -223,6 +223,8 @@ html,body {
     font-weight: 400;
     font-size: .2rem;
     margin-bottom: .55rem;
+    color: white;
+    text-decoration: none;
 }
 .footer-contact-icon {
     width: .48rem;
