@@ -142,22 +142,24 @@
             var stayTunedInput = document.getElementsByClassName('stay-tuned-input')[0];
             var email = stayTunedInput.value;
             if (email) {
+                if (!/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/.test(email)) {
+                    alert('邮箱格式错误！')
+                    return;
+                }
                 var formData = new FormData();
                 formData.append('appid', '17966');
                 formData.append('signature', '27ca76707f0bc73acb71a2840556ecb0');
-                formData.append('address', '346508928@193.com');
+                formData.append('address', email);
                 formData.append('target', 'zsI6O4');
                 fetch('https://api.mysubmail.com/addressbook/mail/subscribe.json', {
                     method: 'post',
                     mode: 'no-cors',
                     body: formData,
                 }).then(response => {
-                    debugger
                     // if (response.json) {
                     //     return response.json()
                     // }
                 }).then(data => {
-                    debugger
                 })
                 // var request = new XMLHttpRequest();
                 // request.onreadystatechange = function () { // 状态发生变化时，函数被回调
