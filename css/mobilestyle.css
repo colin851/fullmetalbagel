@@ -50,6 +50,12 @@ html,body {
     position: absolute;
 }
 /* 字体未找到 */
+.section-p1,.section-p2,.section-p4 {
+    min-height: 6.3rem;
+}
+.section-p5 {
+    min-height: 5.9rem;
+}
 .section-p1 .section-content {
     left: 50%;
     top: 50%;
