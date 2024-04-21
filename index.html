@@ -2,15 +2,22 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <title>FULL METAL BAGEL</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    
+
     <script>
         function isMobile() {
             let flag = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -152,55 +159,9 @@
             <a><img class="footer-contact-icon" src="./img/discord.png" /></a>
         </div>
     </footer>
-    <script>
-        var stayTunedBtn = document.getElementsByClassName('stay-tuned-btn')[0];
-        stayTunedBtn.addEventListener('click', function(){
-            var stayTunedInput = document.getElementsByClassName('stay-tuned-input')[0];
-            var email = stayTunedInput.value;
-            if (email) {
-                if (!/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/.test(email)) {
-                    alert('邮箱格式错误！')
-                    return;
-                }
-                var formData = new FormData();
-                formData.append('appid', '17966');
-                formData.append('signature', '27ca76707f0bc73acb71a2840556ecb0');
-                formData.append('address', email);
-                formData.append('target', 'zsI6O4');
-                fetch('https://api.mysubmail.com/addressbook/mail/subscribe.json', {
-                    method: 'post',
-                    mode: 'no-cors',
-                    body: formData,
-                }).then(response => {
-                    // if (response.json) {
-                    //     return response.json()
-                    // }
-                }).then(data => {
-                })
-                // var request = new XMLHttpRequest();
-                // request.onreadystatechange = function () { // 状态发生变化时，函数被回调
-                //     if (request.readyState === 4) { // 成功完成
-                //         debugger
-                //         // 判断响应结果:
-                //         if (request.status === 200) {
-                //             // 成功，通过responseText拿到响应的文本:
-                //             return success(request.responseText);
-                //         } else {
-                //             // 失败，根据响应码判断失败原因:
-                //             return fail(request.status);
-                //         }
-                //     } else {
-                //         // HTTP请求还在继续...
-                //     }
-                // }
-                // request.open('POST', 'https://api.mysubmail.com/addressbook/mail/subscribe.json');
-                // request.setRequestHeader('Conten-Type', 'application/x-www-form-urlencoded');
-                // request.setRequestHeader('Access-Control-Allow-Origin', '*');
-                // request.withCredentials = true;
-                // request.send(formData);
-            }
-        })
-    </script>
+    <!-- <script src="./js/crypto.js"></script> -->
+    <script src="./js/toast.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
