@@ -1,7 +1,7 @@
 const getDetailHtml = function() {
     return `
         <div class="title">Privacy Policy</div>
-        <p class="paragraph">Effective Date: [*], [*]</p>
+        <p class="paragraph">Effective Date: May 12th, 2024</p>
         <p class="paragraph">Welcome to the <a href="http://www.fullmetalbagel.com">http://www.fullmetalbagel.com!</a></p>
         <p class="paragraph">This privacy policy (“Privacy Policy”) applies to the http://www.fullmetalbagel.com website (the “Website”) as well as the several Fullmetalbagel published games, applications, and software that link to or reference this Privacy Policy (the “Games”, and collectively, the “Services”). The Services are provided and controlled by ELECTRIC DOLPHINS LIMITED, whose registered address is at UNIT A1 OF UNIT A 11/F SUCCESS COMM BLDG 245-251 HENNESSY RD HK (“we” or “us”). If you use products or services operated by ELECTRIC DOLPHINS LIMITED or its affiliates, and you would like to understand how data is processed, you will need to review the privacy policy for that particular product or service. This Privacy Policy similarly does not apply to other products or services which may otherwise make API calls using, or be accessible via, a <a href="http://www.fullmetalbagel.com">http://www.fullmetalbagel.com</a> subdomain.</p>
         <p class="paragraph">1.What Information We Collect</p>
