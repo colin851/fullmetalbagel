@@ -105,6 +105,7 @@
 }
 .hell-express-img {
     width: 2.38rem;
+    margin-bottom: .4116rem;
 }
 .follow-block {
     display: flex;
@@ -146,7 +147,7 @@
     position: static;
     
 }
-.content-text-block .red {
+.content-text-block .red-title {
     margin-bottom: .16rem;
     font-size: .2rem;
     font-weight: 900;

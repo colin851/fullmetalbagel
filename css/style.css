@@ -12,10 +12,11 @@
     align-items: center;
     justify-content: space-around;
     font-weight: 900;
-    font-size: 1.25rem;
+    font-size: 20px;
     padding: 0;
     margin: 0;
     list-style: none;
+    margin-left: -9.375rem;
 }
 .nav-item a {
     display: block;
@@ -106,7 +107,8 @@
     font-family: "ITC Avant Garde Gothic Pro";
 }
 .hell-express-img {
-    width: 23.75rem;
+    width: 23.75rem; 
+    margin-bottom: 2.54125rem;
 }
 .follow-block {
     display: flex;
@@ -137,6 +139,9 @@
 .section-p3 .section-content {
     left: 9.875rem;
     top: 9rem;
+}
+.red-title {
+    font-weight: 900;
 }
 .content-text-block .red {
     font-size: 1.5rem;
@@ -227,14 +232,14 @@
     text-align: center;
 }
 .contact-text {
-    font-size: 2.25rem;
+    font-size: 36px;
     display: block;
     margin-bottom: 1rem;
     font-weight: 900;
     color: #E3520B;
 }
 .contact-email {
-    font-size: 2.5rem;
+    font-size: 40px;
     font-family: "Roboto Flex", sans-serif;
     font-weight: 400;
 }
