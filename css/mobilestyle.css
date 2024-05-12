@@ -37,9 +37,6 @@
 .menu-item:last-child{
     margin-bottom: 0;
 }
-.nav-item.cur {
-   color: #FF4F17;
-}
 .nav {
     height: .6rem;
     display: flex;
@@ -105,6 +102,9 @@
     font-size: .6rem;
     font-weight: 700;
     font-family: "ITC Avant Garde Gothic Pro";
+}
+.hell-express-img {
+    width: 2.38rem;
 }
 .follow-block {
     display: flex;
@@ -174,6 +174,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 /* 字体未找到 */
 .stay-tuned {
@@ -181,6 +182,10 @@
     font-size: .24rem;
     font-weight: 700;
     text-align: center;
+    margin-bottom: .24rem;
+}
+.stay-tuned-img {
+    width: 1.17rem;
     margin-bottom: .24rem;
 }
 .stay-tuned-input {
@@ -196,7 +201,12 @@
     padding: 0 .16rem;
     font-weight: 300;
 }
+.stay-tuned-input::placeholder {
+    color: #A0A0A0;
+    font-size: .15rem;
+}
 .stay-tuned-btn {
+    width: 100%;
     background: #E3520B;
     height: .48rem;
     border-radius: .08rem;
@@ -214,8 +224,15 @@
     font-size: .24rem;
     font-weight: 700;
 }
+.join-block-img {
+    width: 2.3rem;
+    margin-top: .64rem;
+    margin-bottom: .4rem;
+}
 .join-icon-block {
+    width: 100%;
     display: flex;
+    padding: 0 .6rem;
     justify-content: space-around;
 }
 .join-icon {

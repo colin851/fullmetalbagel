@@ -11,13 +11,16 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    list-style: none;
-    cursor: pointer;
     font-weight: 900;
     font-size: 1.25rem;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
-.nav-block .cur {
-    color: #FF4F17;
+.nav-item a {
+    display: block;
+    height: 5rem;
+    line-height: 5rem;
 }
 .logo-box {
     display: flex;
@@ -78,6 +81,9 @@
     font-size: 6rem;
     font-weight: 700;
     font-family: "ITC Avant Garde Gothic Pro";
+}
+.hell-express-img {
+    width: 23.75rem;
 }
 .follow-block {
     display: flex;
@@ -141,6 +147,10 @@
     font-family: "ITC Avant Garde Gothic Std";
     font-weight: 700;
 }
+.stay-tuned-img {
+    width: 14.625rem;
+    margin-bottom: 2.5rem;
+}
 .stay-tuned-input {
     border: none;
     outline: none;
@@ -152,6 +162,9 @@
     margin-bottom: 3rem;
     padding: 0 1.875rem;
     font-weight: 300;
+}
+.stay-tuned-input::placeholder {
+    color: #A0A0A0;
 }
 .stay-tuned-btn {
     display: block;
@@ -170,6 +183,10 @@
     margin-bottom: 3.25rem;
     font-family: "ITC Avant Garde Gothic Std";
     font-weight: 700;
+}
+.join-block-img {
+    width: 28.6875rem;
+    margin-bottom: 3.25rem;
 }
 .join-icon-block {
     display: flex;

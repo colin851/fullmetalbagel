@@ -13,13 +13,23 @@ html,body {
     width: 100%;
     font-family: "Roboto", sans-serif;
 }
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 11;
+    background-color: #111111;
+}
+.nav-item a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
 .red {
     color: #F41F1F;
 }
 .red-title {
     color: #FF4F17;
 }
-.nav-item a {
-    color: white;
-    text-decoration: none;
+.nav-item .cur {
+    color: #FF4F17;
 }
