@@ -28,6 +28,7 @@
                     body: formData,
                 }).then(response => {
                     toast({'time':2000,'position':'middle','str':'订阅成功！'});
+                    stayTunedInput.value = '';
                 }).then(data => {
                 })
             }
@@ -35,6 +36,7 @@
                 let isTrue = navigator.sendBeacon('https://api.mysubmail.com/addressbook/mail/subscribe.json', formData);
                 if (isTrue) {
                     toast({'time':2000,'position':'middle','str':'订阅成功！'});
+                    stayTunedInput.value = '';
                 } else {
                     sendFetch();
                 }
