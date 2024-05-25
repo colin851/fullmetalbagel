@@ -13,7 +13,7 @@
         var email = stayTunedInput.value;
         if (email) {
             if (!/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/.test(email)) {
-                toast({'time':2000,'position':'middle','str':'邮箱格式错误！'});
+                toast({'time':2000,'position':'middle','str':'Please enter a valid email address！'});
                 return;
             }
             var formData = new FormData();
@@ -27,7 +27,7 @@
                     mode: 'no-cors',
                     body: formData,
                 }).then(response => {
-                    toast({'time':2000,'position':'middle','str':'订阅成功！'});
+                    toast({'time':2000,'position':'middle','str':'Done！'});
                     stayTunedInput.value = '';
                 }).then(data => {
                 })
@@ -35,7 +35,7 @@
             if (navigator.sendBeacon) {
                 let isTrue = navigator.sendBeacon('https://api.mysubmail.com/addressbook/mail/subscribe.json', formData);
                 if (isTrue) {
-                    toast({'time':2000,'position':'middle','str':'订阅成功！'});
+                    toast({'time':2000,'position':'middle','str':'Done！'});
                     stayTunedInput.value = '';
                 } else {
                     sendFetch();
@@ -65,7 +65,7 @@
             // request.withCredentials = true;
             // request.send(formData);
         } else {
-            toast({'time':2000,'position':'middle','str':'请输入邮箱！'});
+            toast({'time':2000,'position':'middle','str':'Please enter your email address！'});
         }
     });
     const navBlock = document.querySelector(".nav-block");
